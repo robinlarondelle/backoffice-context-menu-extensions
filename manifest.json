@@ -1,0 +1,24 @@
+{
+  "name": "JEX Backoffice context menu extensions",
+  "version": "1",
+  "manifest_version": 2, 
+  "description": "Voegt nieuwe acties aan de contextmenu van JEX Backoffice toe",
+  "icons": {
+    "16": "images/backoffice-icon-sm.png",
+    "48": "images/backoffice-icon-md.png",
+    "128": "images/backoffice-icon-lg.png"
+  },
+  "browser_action": {
+    "default_title": "Click to generate new IBAN"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "notifications",
+    "contextMenus",
+    "activeTab",
+    "storage"
+  ]
+}
